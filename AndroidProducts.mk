@@ -16,4 +16,5 @@
 
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/aosp_gt58wifi.mk \
+	$(LOCAL_DIR)/ev_gt58wifi.mk \
 	$(LOCAL_DIR)/lineage_gt58wifi.mk

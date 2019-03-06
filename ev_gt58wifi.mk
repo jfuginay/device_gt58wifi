@@ -13,20 +13,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Evervolv stuff.
+$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_tablet_wifionly.mk)
 
 $(call inherit-product, $(LOCAL_PATH)/aosp_gt58wifi.mk)
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-ev
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1024
-TARGET_SCREEN_WIDTH := 768
+BOOT_ANIMATION_SIZE := xga
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_gt58wifi
+PRODUCT_NAME := ev_gt58wifi
 PRODUCT_MODEL := SM-T350
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+# Set up the product codename & MOTD.
+PRODUCT_CODENAME := sedo
+PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Samsung Galaxy A Tablet\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
+
