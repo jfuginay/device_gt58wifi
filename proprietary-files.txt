@@ -1,4 +1,4 @@
-# Samsung Package Version T550XXU1CQL5_T550OJV1CQK3_TUR (unless otherwise specified and/or tagged)
+# Samsung Package Version T350XXU1CQJ5_T350XAC1CQJ5_XAC (unless otherwise specified and/or tagged)
 
 # ACDBs
 etc/Bluetooth_cal.acdb
@@ -10,6 +10,7 @@ etc/Headset_cal.acdb
 etc/Speaker_cal.acdb
 
 # Audio
+etc/Tfa9895.cnt
 lib/hw/audio.primary.msm8916.so
 lib/libaudio_soundtrigger.so
 lib/libSamsungPreProcess.so
