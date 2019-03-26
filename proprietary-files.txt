@@ -11,7 +11,7 @@ etc/Speaker_cal.acdb
 
 # Audio
 etc/Tfa9895.cnt
-lib/hw/audio.primary.msm8916.so
+lib/hw/audio.primary.msm8916.so:vendor/lib/hw/audio.primary.msm8916.so
 lib/libaudio_soundtrigger.so
 lib/libSamsungPreProcess.so
 lib/libSamsungPostProcess.so
@@ -27,7 +27,7 @@ lib/libfloatingfeature.so
 lib/libtfa9895.so
 
 # Camera
-lib/hw/camera.msm8916.so:lib/hw/camera.vendor.msm8916.so
+lib/hw/camera.msm8916.so:vendor/lib/hw/camera.vendor.msm8916.so
 lib/libaec_algo_front.so
 lib/libaec_algo_rear.so
 lib/libaf_algo_rear.so
@@ -96,4 +96,4 @@ vendor/lib/libqmi.so
 vendor/lib/libsmemlog.so
 
 # Sensors
-lib/hw/sensors.msm8916.so:lib/hw/sensors.vendor.msm8916.so
+lib/hw/sensors.msm8916.so:vendor/lib/hw/sensors.vendor.msm8916.so
