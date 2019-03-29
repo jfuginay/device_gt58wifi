@@ -22,11 +22,16 @@ $(call inherit-product, $(LOCAL_PATH)/aosp_gt58wifi.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-ev
 
 # Boot animation
-BOOT_ANIMATION_SIZE := xga
+TARGET_SCREEN_HEIGHT := 1024
+TARGET_SCREEN_WIDTH := 768
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := ev_gt58wifi
+PRODUCT_DEVICE := gt58wifi
+PRODUCT_NAME := lineage_gt58wifi
+PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T350
+PRODUCT_MANUFACTURER := samsung
+PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
