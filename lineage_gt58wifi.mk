@@ -14,12 +14,10 @@
 # limitations under the License.
 
 # Inherit some common Evervolv stuff.
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_tablet_wifionly.mk)
-
-$(call inherit-product, $(LOCAL_PATH)/aosp_gt58wifi.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-ev
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1024
@@ -34,8 +32,3 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-# Set up the product codename & MOTD.
-PRODUCT_CODENAME := sedo
-PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Samsung Galaxy A Tablet\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
-
