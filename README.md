@@ -17,3 +17,4 @@ Display | 1024 x 768, 8.0" (246.38mm)
 Rear Camera  | 5.0 MP
 Front Camera | 2.0 MP
 
+# device_gt58wifi
