@@ -4,5 +4,6 @@
     "target_path": "device/samsung/gte-common",
     "dep_type": "device"
   }
+
 ]
 

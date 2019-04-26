@@ -96,4 +96,5 @@ vendor/lib/libqmi.so
 vendor/lib/libsmemlog.so
 
 # Sensors
-lib/hw/sensors.msm8916.so:vendor/lib/hw/sensors.vendor.msm8916.so
+lib/hw/sensors.msm8916.so
+lib/hw/sensors.vendor.msm8916.so

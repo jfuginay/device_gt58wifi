@@ -16,6 +16,8 @@
 # Inherit some common Evervolv stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
+$(call inherit-product, $(LOCAL_PATH)/aosp_gt58wifi.mk)
+
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
