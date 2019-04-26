@@ -18,3 +18,4 @@ Rear Camera  | 5.0 MP
 Front Camera | 2.0 MP
 
 # device_gt58wifi
+# device_gt58wifi
